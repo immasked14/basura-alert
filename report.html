@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basura Alert — Report a Concern</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><span class="brand-mark"></span> Basura Alert</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Waste Schedule</a>
+        <a href="schedule.html#guide">Waste Guide</a>
+        <a href="report.html" class="active">Report a Concern</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="schedule.html">Check Schedule</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section" style="padding-top:3rem">
+      <p class="eyebrow">Report a concern</p>
+      <h1 class="section-title">Demonstration reporting form</h1>
+      <p class="notice">Demonstration only: reports are saved in this browser and are not sent to barangay officials or waste collection personnel.</p>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <form id="report-form">
+          <label for="category">Concern category *</label>
+          <select id="category" required>
+            <option value="">Select</option>
+            <option>Garbage outside designated time</option>
+            <option>Missed collection</option>
+            <option>Improper segregation</option>
+            <option>Illegal dumping</option>
+            <option>Other</option>
+          </select>
+          <label for="location">Location / Street *</label>
+          <input id="location" type="text" required placeholder="e.g. Main St" />
+          <label for="date">Date observed *</label>
+          <input id="date" type="date" required />
+          <label for="description">Description *</label>
+          <textarea id="description" required placeholder="Describe the concern" rows="4"></textarea>
+          <label for="image">Optional image (max 2MB, jpg/png)</label>
+          <input id="image" type="file" accept="image/*" />
+          <button type="button" id="remove-image" class="btn secondary" style="display:none;">Remove image</button>
+          <img id="preview" alt="Preview" style="max-width:200px;margin-top:.5rem;display:none;" />
+          <div style="display:flex;gap:.5rem;margin-top:1rem">
+            <button class="btn" type="submit">Submit Report</button>
+            <button class="btn secondary" type="reset">Reset</button>
+          </div>
+        </form>
+        <div id="report-status" class="status" role="status" aria-live="polite"></div>
+        <div id="refno" class="card" style="display:none;margin-top:1rem;"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Demonstration Reports (this browser only)</h2>
+        <input id="rep-search" type="search" placeholder="Search..." />
+        <select id="rep-filter">
+          <option value="all">All categories</option>
+          <option>Garbage outside designated time</option>
+          <option>Missed collection</option>
+          <option>Improper segregation</option>
+          <option>Illegal dumping</option>
+          <option>Other</option>
+        </select>
+        <select id="rep-sort">
+          <option value="newest">Newest first</option>
+        </select>
+        <button class="btn secondary" id="clear-all">Clear All</button>
+        <p id="rep-count"></p>
+        <ul id="rep-list"></ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="inner">
+      <div><strong>Basura Alert</strong><p>Tamang Oras, Malinis na Bukas.</p></div>
+      <div><a href="index.html">Home</a><br><a href="schedule.html">Schedule</a><br><a href="report.html">Report</a><br><a href="about.html">About</a></div>
+      <div>Contact: <span data-community="contact"></span></div>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/schedule-core.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/report.js"></script>
+</body>
+</html>
+EOF
+Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\report.html"

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basura Alert — Waste Schedule</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><span class="brand-mark"></span> Basura Alert</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="schedule.html" class="active">Waste Schedule</a>
+        <a href="schedule.html#guide">Waste Guide</a>
+        <a href="report.html">Report a Concern</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="schedule.html">Check Schedule</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section" style="padding-top:3rem">
+      <p class="eyebrow">Waste collection schedule</p>
+      <h1 class="section-title">Next collection and weekly calendar</h1>
+      <p style="color:var(--muted);max-width:60ch">Community: <span data-community="barangay"></span>, <span data-community="city"></span></p>
+      <p>Verification status: <strong id="verify-status">Not verified</strong></p>
+      <p id="source-info"></p>
+      <p class="notice" id="verify-notice"></p>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Next Collection</h2>
+        <p id="next-collection-date">Schedule to be confirmed.</p>
+        <p id="countdown">Schedule to be confirmed.</p>
+        <p>Reminder status: <span id="reminder-status">—</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Weekly Calendar</h2>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem">
+          <button class="btn secondary" id="prev-week">Previous Week</button>
+          <button class="btn" id="today-week">Today</button>
+          <button class="btn secondary" id="next-week">Next Week</button>
+        </div>
+        <div id="calendar"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Reminder Preferences</h2>
+        <label for="reminder-lead">Reminder lead time</label>
+        <select id="reminder-lead">
+          <option value="15">15 minutes before</option>
+          <option value="30">30 minutes before</option>
+          <option value="60">1 hour before</option>
+          <option value="1440">1 day before</option>
+        </select>
+        <p id="reminder-status"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Notification Preferences</h2>
+        <p id="notif-status"></p>
+        <label for="notif-lead">Reminder lead time</label>
+        <select id="notif-lead">
+          <option value="15">15 minutes before</option>
+          <option value="30">30 minutes before</option>
+          <option value="60">1 hour before</option>
+          <option value="1440">1 day before</option>
+        </select>
+        <button class="btn" id="enable-notif">Enable notifications</button>
+        <button class="btn secondary" id="disable-notif">Disable notifications</button>
+        <p class="notice">Page-open reminders only. Reliable background notifications require additional technology.</p>
+      </div>
+    </section>
+
+    <section class="section" id="guide">
+      <div class="card">
+        <h2>Waste Segregation Guide</h2>
+        <input id="guide-search" type="search" placeholder="Search item..." aria-label="Search waste items" />
+        <select id="guide-filter" aria-label="Filter category">
+          <option value="all">All</option>
+          <option value="biodegradable">Biodegradable</option>
+          <option value="recyclable">Recyclable</option>
+          <option value="residual">Residual</option>
+          <option value="special">Special</option>
+        </select>
+        <p id="guide-count"></p>
+        <ul id="guide-list"></ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="inner">
+      <div><strong>Basura Alert</strong><p>Tamang Oras, Malinis na Bukas.</p></div>
+      <div><a href="index.html">Home</a><br><a href="schedule.html">Schedule</a><br><a href="report.html">Report</a><br><a href="about.html">About</a></div>
+      <div>Contact: <span data-community="contact"></span></div>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/schedule-core.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/schedule.js"></script>
+  <script src="js/notifications.js"></script>
+</body>
+</html>
+EOF
+Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\schedule.html"

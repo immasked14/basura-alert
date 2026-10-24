@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basura Alert — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><span class="brand-mark"></span> Basura Alert</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="schedule.html">Waste Schedule</a>
+        <a href="schedule.html#guide">Waste Guide</a>
+        <a href="report.html">Report a Concern</a>
+        <a href="about.html">About</a>
+        <a class="btn" href="schedule.html">Check Schedule</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero-campaign">
+      <div class="inner">
+        <p class="eyebrow" style="color:#B9D96C">Basura Alert</p>
+        <h1>Tamang Oras, Malinis na Bukas.</h1>
+        <p>Know your waste schedule. Dispose responsibly. Build a cleaner community together.</p>
+        <div class="hero-actions">
+          <a class="btn" href="schedule.html">Check the Schedule</a>
+          <a class="btn secondary" href="schedule.html#guide">Explore Waste Guide</a>
+        </div>
+        <div class="status-pill" id="status-pill">Community schedule awaiting verification</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Application preview</p>
+      <h2 class="section-title">A cleaner routine, in one place</h2>
+      <div class="product-mock">
+        <div class="mock-row">
+          <div class="mock-card"><strong>Next Collection</strong><p id="next-schedule">Schedule not yet verified.</p></div>
+          <div class="mock-card"><strong>Countdown</strong><p id="countdown">Schedule to be confirmed</p></div>
+        </div>
+        <div class="mock-row">
+          <div class="mock-card"><strong>Quick Actions</strong><p><a href="schedule.html">Schedule</a> · <a href="schedule.html#guide">Guide</a> · <a href="report.html">Report</a></p></div>
+          <div class="mock-card"><strong>Status</strong><p id="schedule-preview">Schedule not yet verified.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Features</p>
+      <h2 class="section-title">Designed for everyday community use</h2>
+      <div class="feature">
+        <div>
+          <h3>Smart collection schedule</h3>
+          <p>Centralized, verified community schedule information.</p>
+        </div>
+        <img src="assets/images/waste-segregation.jpg" alt="Waste segregation" onerror="this.style.display='none';this.parentElement.classList.add('fallback-img');this.parentElement.textContent='Add assets/images/waste-segregation.jpg'" />
+      </div>
+      <div class="feature reverse">
+        <div>
+          <h3>Live countdown</h3>
+          <p>Know exactly when the next collection happens.</p>
+        </div>
+        <img src="assets/images/community-cleanup.jpg" alt="Community cleanup" onerror="this.style.display='none';this.parentElement.classList.add('fallback-img');this.parentElement.textContent='Add assets/images/community-cleanup.jpg'" />
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">How it works</p>
+      <h2 class="section-title">Four simple steps</h2>
+      <div class="how">
+        <div class="step"><div class="step-num">1</div><p>Check the verified schedule.</p></div>
+        <div class="step"><div class="step-num">2</div><p>Learn proper disposal guidance.</p></div>
+        <div class="step"><div class="step-num">3</div><p>Prepare for collection.</p></div>
+        <div class="step"><div class="step-num">4</div><p>Help maintain a cleaner community.</p></div>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <h2>Ready to keep your community clean?</h2>
+      <p>Check the schedule and learn proper waste disposal today.</p>
+      <a class="btn" href="schedule.html" style="background:#fff;color:var(--green-dark)">Check the Schedule</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="inner">
+      <div><strong>Basura Alert</strong><p>A community-based waste disposal schedule and reminder website.</p></div>
+      <div><a href="index.html">Home</a><br><a href="schedule.html">Schedule</a><br><a href="report.html">Report</a></div>
+      <div>Contact: <span data-community="contact"></span><br><span data-community="barangay"></span>, <span data-community="city"></span></div>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/schedule-core.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+EOF
+Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\index.html"
