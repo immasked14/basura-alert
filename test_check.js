@@ -1,0 +1,1 @@
+const fs=require('fs');['index.html','schedule.html','report.html','about.html'].forEach(f=>{const c=fs.readFileSync(f,'utf8');if(c.includes('css/style.css')) console.log(f+':OK'); else console.log(f+':NO');});

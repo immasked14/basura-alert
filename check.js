@@ -1,0 +1,1 @@
+const fs=require('fs');const css=fs.readFileSync('css/style.css','utf8');const o=(css.match(/\{/g)||[]).length,c=(css.match(/\}/g)||[]).length;console.log(o,c,o===c?'ok':'bad');
