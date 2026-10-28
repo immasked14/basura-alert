@@ -1,102 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang=""en"">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
   <title>Basura Alert — Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel=""stylesheet"" href=""css/style.css"" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="inner">
-      <a class="brand" href="index.html"><span class="brand-mark"></span> Basura Alert</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-      <nav class="menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="schedule.html">Waste Schedule</a>
-        <a href="schedule.html#guide">Waste Guide</a>
-        <a href="report.html">Report a Concern</a>
-        <a href="about.html">About</a>
-        <a class="btn" href="schedule.html">Check Schedule</a>
+  <header class=""site-header"">
+    <div class=""inner"">
+      <a class=""brand"" href=""index.html"">
+        <span class=""brand-mark"">
+          <svg width=""24"" height=""24"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z""></path>
+            <path d=""M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12""></path>
+          </svg>
+        </span>
+        Basura Alert
+      </a>
+      <button class=""nav-toggle"" aria-label=""Toggle navigation"">
+        <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+          <line x1=""3"" y1=""12"" x2=""21"" y2=""12""></line>
+          <line x1=""3"" y1=""6"" x2=""21"" y2=""6""></line>
+          <line x1=""3"" y1=""18"" x2=""21"" y2=""18""></line>
+        </svg>
+        Menu
+      </button>
+      <nav class=""menu"">
+        <a href=""index.html"" class=""active"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z""></path>
+            <polyline points=""9 22 9 12 15 12 15 22""></polyline>
+          </svg>
+          Home
+        </a>
+        <a href=""schedule.html"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <rect width=""18"" height=""18"" x=""3"" y=""4"" rx=""2"" ry=""2""></rect>
+            <line x1=""16"" x2=""16"" y1=""2"" y2=""6""></line>
+            <line x1=""8"" x2=""8"" y1=""2"" y2=""6""></line>
+            <line x1=""3"" x2=""21"" y1=""10"" y2=""10""></line>
+          </svg>
+          Waste Schedule
+        </a>
+        <a href=""schedule.html#guide"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <circle cx=""12"" cy=""12"" r=""10""></circle>
+            <path d=""M12 16v-4""></path>
+            <path d=""M12 8h.01""></path>
+          </svg>
+          Waste Guide
+        </a>
+        <a href=""report.html"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z""></path>
+            <line x1=""12"" y1=""9"" x2=""12"" y2=""13""></line>
+            <line x1=""12"" y1=""17"" x2=""12.01"" y2=""17""></line>
+          </svg>
+          Report a Concern
+        </a>
+        <a href=""about.html"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <circle cx=""12"" cy=""12"" r=""10""></circle>
+            <path d=""M12 16v-4""></path>
+            <path d=""M12 8h.01""></path>
+          </svg>
+          About
+        </a>
+        <a class=""btn"" href=""schedule.html"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <rect width=""18"" height=""18"" x=""3"" y=""4"" rx=""2"" ry=""2""></rect>
+            <line x1=""16"" x2=""16"" y1=""2"" y2=""6""></line>
+            <line x1=""8"" x2=""8"" y1=""2"" y2=""6""></line>
+            <line x1=""3"" x2=""21"" y1=""10"" y2=""10""></line>
+            <path d=""M8 14h.01""></path>
+            <path d=""M12 14h.01""></path>
+            <path d=""M16 14h.01""></path>
+            <path d=""M8 18h.01""></path>
+            <path d=""M12 18h.01""></path>
+            <path d=""M16 18h.01""></path>
+          </svg>
+          Check Schedule
+        </a>
       </nav>
     </div>
   </header>
+
   <main>
-    <section class="hero-campaign">
-      <div class="inner">
-        <p class="eyebrow" style="color:#B9D96C">Basura Alert</p>
-        <h1>Tamang Oras, Malinis na Bukas.</h1>
-        <p>Know your waste schedule. Dispose responsibly. Build a cleaner community together.</p>
-        <div class="hero-actions">
-          <a class="btn" href="schedule.html">Check the Schedule</a>
-          <a class="btn secondary" href="schedule.html#guide">Explore Waste Guide</a>
+    <section class=""hero-campaign"">
+      <div class=""inner"">
+        <p class=""eyebrow"">
+          <svg width=""16"" height=""16"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z""></path>
+            <path d=""M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12""></path>
+          </svg>
+          Basura Alert Campaign
+        </p>
+        <h1>Tamang Oras,<br/>Malinis na Bukas.</h1>
+        <p>Empowering communities with verified waste collection schedules, proper segregation guidance, and timely reminders for a cleaner, greener future.</p>
+        <div class=""hero-actions"">
+          <a class=""btn"" href=""schedule.html"">
+            <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+              <rect width=""18"" height=""18"" x=""3"" y=""4"" rx=""2"" ry=""2""></rect>
+              <line x1=""16"" x2=""16"" y1=""2"" y2=""6""></line>
+              <line x1=""8"" x2=""8"" y1=""2"" y2=""6""></line>
+              <line x1=""3"" x2=""21"" y1=""10"" y2=""10""></line>
+            </svg>
+            Check the Schedule
+            <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+              <path d=""M5 12h14""></path>
+              <path d=""m12 5 7 7-7 7""></path>
+            </svg>
+          </a>
+          <a class=""btn secondary"" href=""schedule.html#guide"">
+            <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+              <circle cx=""12"" cy=""12"" r=""10""></circle>
+              <path d=""M12 16v-4""></path>
+              <path d=""M12 8h.01""></path>
+            </svg>
+            Explore Waste Guide
+          </a>
         </div>
-        <div class="status-pill" id="status-pill">Community schedule awaiting verification</div>
+        <div class=""status-pill"" id=""status-pill"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <circle cx=""12"" cy=""12"" r=""10""></circle>
+            <polyline points=""12 6 12 12 16 14""></polyline>
+          </svg>
+          Community schedule awaiting verification
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <p class="eyebrow">Application preview</p>
-      <h2 class="section-title">A cleaner routine, in one place</h2>
-      <div class="product-mock">
-        <div class="mock-row">
-          <div class="mock-card"><strong>Next Collection</strong><p id="next-schedule">Schedule not yet verified.</p></div>
-          <div class="mock-card"><strong>Countdown</strong><p id="countdown">Schedule to be confirmed</p></div>
+    <section class=""section"">
+      <div class=""section-header"">
+        <p class=""eyebrow"">
+          <svg width=""16"" height=""16"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <rect width=""7"" height=""7"" x=""3"" y=""3"" rx=""1""></rect>
+            <rect width=""7"" height=""7"" x=""14"" y=""3"" rx=""1""></rect>
+            <rect width=""7"" height=""7"" x=""14"" y=""14"" rx=""1""></rect>
+            <rect width=""7"" height=""7"" x=""3"" y=""14"" rx=""1""></rect>
+          </svg>
+          Your Waste Management Dashboard
+        </p>
+        <h2 class=""section-title"">A cleaner routine, in one place</h2>
+        <p class=""section-subtitle"">Stay on top of collection days with real-time countdowns and smart reminders.</p>
+      </div>
+      <div class=""product-mock"">
+        <div class=""mock-row"">
+          <div class=""mock-card"">
+            <strong>
+              <svg width=""20"" height=""20"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""margin-right: 0.5rem;"">
+                <rect width=""18"" height=""18"" x=""3"" y=""4"" rx=""2"" ry=""2""></rect>
+                <line x1=""16"" x2=""16"" y1=""2"" y2=""6""></line>
+                <line x1=""8"" x2=""8"" y1=""2"" y2=""6""></line>
+                <line x1=""3"" x2=""21"" y1=""10"" y2=""10""></line>
+              </svg>
+              Next Collection
+            </strong>
+            <p id=""next-schedule"">Schedule not yet verified.</p>
+          </div>
+          <div class=""mock-card"">
+            <strong>
+              <svg width=""20"" height=""20"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""margin-right: 0.5rem;"">
+                <circle cx=""12"" cy=""12"" r=""10""></circle>
+                <polyline points=""12 6 12 12 16 14""></polyline>
+              </svg>
+              Countdown
+            </strong>
+            <p id=""countdown"">Schedule to be confirmed</p>
+          </div>
         </div>
-        <div class="mock-row">
-          <div class="mock-card"><strong>Quick Actions</strong><p><a href="schedule.html">Schedule</a> · <a href="schedule.html#guide">Guide</a> · <a href="report.html">Report</a></p></div>
-          <div class="mock-card"><strong>Status</strong><p id="schedule-preview">Schedule not yet verified.</p></div>
+        <div class=""mock-row"">
+          <div class=""mock-card"">
+            <strong>
+              <svg width=""20"" height=""20"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""margin-right: 0.5rem;"">
+                <polygon points=""13 2 3 14 12 14 11 22 21 10 12 10 13 2""></polygon>
+              </svg>
+              Quick Actions
+            </strong>
+            <p style=""display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.8rem;"">
+              <a href=""schedule.html"" style=""color: var(--forest-green); font-weight: 600;"">Schedule</a> •
+              <a href=""schedule.html#guide"" style=""color: var(--forest-green); font-weight: 600;"">Guide</a> •
+              <a href=""report.html"" style=""color: var(--forest-green); font-weight: 600;"">Report</a>
+            </p>
+          </div>
+          <div class=""mock-card"">
+            <strong>
+              <svg width=""20"" height=""20"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""margin-right: 0.5rem;"">
+                <path d=""M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10""></path>
+              </svg>
+              Status
+            </strong>
+            <p id=""schedule-preview"">Schedule not yet verified.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <p class="eyebrow">Features</p>
-      <h2 class="section-title">Designed for everyday community use</h2>
-      <div class="feature">
-        <div>
-          <h3>Smart collection schedule</h3>
-          <p>Centralized, verified community schedule information.</p>
+    <section class=""section alt"">
+      <div class=""section-inner"">
+        <div class=""section-header"">
+          <p class=""eyebrow"">
+            <svg width=""16"" height=""16"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+              <path d=""M12 20h9""></path>
+              <path d=""M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z""></path>
+            </svg>
+            Core Features
+          </p>
+          <h2 class=""section-title"">Designed for everyday community action</h2>
+          <p class=""section-subtitle"">Practical tools to build sustainable waste management habits.</p>
         </div>
-        <img src="assets/images/waste-segregation.jpg" alt="Waste segregation" onerror="this.style.display='none';this.parentElement.classList.add('fallback-img');this.parentElement.textContent='Add assets/images/waste-segregation.jpg'" />
-      </div>
-      <div class="feature reverse">
-        <div>
-          <h3>Live countdown</h3>
-          <p>Know exactly when the next collection happens.</p>
+        
+        <div class=""feature"">
+          <div class=""feature-content"">
+            <h3>
+              <svg width=""32"" height=""32"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""color: var(--fresh-lime); margin-right: 0.75rem;"">
+                <polyline points=""23 6 13.5 15.5 8.5 10.5 1 18""></polyline>
+                <polyline points=""17 6 23 6 23 12""></polyline>
+              </svg>
+              Smart Collection Schedule
+            </h3>
+            <p>Access centralized, verified community waste collection information. Know exactly when biodegradable, recyclable, residual, and special waste will be collected in your area.</p>
+            <a class=""btn"" href=""schedule.html"">
+              View Schedule
+              <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+                <path d=""M5 12h14""></path>
+                <path d=""m12 5 7 7-7 7""></path>
+              </svg>
+            </a>
+          </div>
+          <div class=""feature-media"">
+            <img src=""assets/images/waste-segregation.jpg"" alt=""Proper waste segregation and recycling"" onerror=""this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--soft-sage), var(--warm-cream))';"">
+          </div>
         </div>
-        <img src="assets/images/community-cleanup.jpg" alt="Community cleanup" onerror="this.style.display='none';this.parentElement.classList.add('fallback-img');this.parentElement.textContent='Add assets/images/community-cleanup.jpg'" />
+
+        <div class=""feature reverse"">
+          <div class=""feature-content"">
+            <h3>
+              <svg width=""32"" height=""32"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""color: var(--fresh-lime); margin-right: 0.75rem;"">
+                <circle cx=""12"" cy=""12"" r=""10""></circle>
+                <polyline points=""12 6 12 12 16 14""></polyline>
+              </svg>
+              Real-Time Countdown
+            </h3>
+            <p>Never miss collection day again. Track the exact time remaining until the next garbage pickup with live countdowns and smart reminder notifications.</p>
+            <a class=""btn"" href=""schedule.html"">
+              Set Reminders
+              <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+                <path d=""M5 12h14""></path>
+                <path d=""m12 5 7 7-7 7""></path>
+              </svg>
+            </a>
+          </div>
+          <div class=""feature-media"">
+            <img src=""assets/images/community-cleanup.jpg"" alt=""Community volunteers cleaning up"" onerror=""this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--soft-sage), var(--warm-cream))';"">
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <p class="eyebrow">How it works</p>
-      <h2 class="section-title">Four simple steps</h2>
-      <div class="how">
-        <div class="step"><div class="step-num">1</div><p>Check the verified schedule.</p></div>
-        <div class="step"><div class="step-num">2</div><p>Learn proper disposal guidance.</p></div>
-        <div class="step"><div class="step-num">3</div><p>Prepare for collection.</p></div>
-        <div class="step"><div class="step-num">4</div><p>Help maintain a cleaner community.</p></div>
+    <section class=""section"">
+      <div class=""section-header"" style=""text-align: center; max-width: 800px; margin: 0 auto 4rem;"">
+        <p class=""eyebrow"">
+          <svg width=""16"" height=""16"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""M12 2v4""></path>
+            <path d=""m16.2 7.8 2.9-2.9""></path>
+            <path d=""M18 12h4""></path>
+            <path d=""m16.2 16.2 2.9 2.9""></path>
+            <path d=""M12 18v4""></path>
+            <path d=""m7.8 16.2-2.9 2.9""></path>
+            <path d=""M6 12H2""></path>
+            <path d=""m7.8 7.8-2.9-2.9""></path>
+          </svg>
+          Simple Process
+        </p>
+        <h2 class=""section-title"">Four simple steps to a cleaner community</h2>
+        <p class=""section-subtitle"">Join the movement for sustainable waste management.</p>
+      </div>
+      <div class=""how-grid"">
+        <div class=""step-card"">
+          <div class=""step-number"">1</div>
+          <h4>Check the Schedule</h4>
+          <p>Verify your community's waste collection days and times for all waste categories.</p>
+        </div>
+        <div class=""step-card"">
+          <div class=""step-number"">2</div>
+          <h4>Learn Proper Segregation</h4>
+          <p>Use our interactive guide to sort waste correctly into biodegradable, recyclable, residual, and special categories.</p>
+        </div>
+        <div class=""step-card"">
+          <div class=""step-number"">3</div>
+          <h4>Prepare for Collection</h4>
+          <p>Set reminders and prepare your properly segregated waste before collection time.</p>
+        </div>
+        <div class=""step-card"">
+          <div class=""step-number"">4</div>
+          <h4>Report & Act</h4>
+          <p>Report concerns about missed collections or improper disposal to help maintain community standards.</p>
+        </div>
       </div>
     </section>
 
-    <section class="cta-final">
+    <section class=""cta-section"">
       <h2>Ready to keep your community clean?</h2>
-      <p>Check the schedule and learn proper waste disposal today.</p>
-      <a class="btn" href="schedule.html" style="background:#fff;color:var(--green-dark)">Check the Schedule</a>
+      <p>Start today with verified schedules, smart reminders, and proper waste segregation guidance.</p>
+      <div class=""hero-actions"" style=""justify-content: center;"">
+        <a class=""btn"" href=""schedule.html"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <rect width=""18"" height=""18"" x=""3"" y=""4"" rx=""2"" ry=""2""></rect>
+            <line x1=""16"" x2=""16"" y1=""2"" y2=""6""></line>
+            <line x1=""8"" x2=""8"" y1=""2"" y2=""6""></line>
+            <line x1=""3"" x2=""21"" y1=""10"" y2=""10""></line>
+          </svg>
+          Check the Schedule Now
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""M5 12h14""></path>
+            <path d=""m12 5 7 7-7 7""></path>
+          </svg>
+        </a>
+        <a class=""btn"" href=""report.html"" style=""background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.5); backdrop-filter: blur(8px);"">
+          <svg width=""18"" height=""18"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"">
+            <path d=""M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z""></path>
+            <line x1=""12"" y1=""9"" x2=""12"" y2=""13""></line>
+            <line x1=""12"" y1=""17"" x2=""12.01"" y2=""17""></line>
+          </svg>
+          Report a Concern
+        </a>
+      </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="inner">
-      <div><strong>Basura Alert</strong><p>A community-based waste disposal schedule and reminder website.</p></div>
-      <div><a href="index.html">Home</a><br><a href="schedule.html">Schedule</a><br><a href="report.html">Report</a></div>
-      <div>Contact: <span data-community="contact"></span><br><span data-community="barangay"></span>, <span data-community="city"></span></div>
+
+  <footer class=""site-footer"">
+    <div class=""inner"">
+      <div>
+        <strong>Basura Alert</strong>
+        <p>Tamang Oras, Malinis na Bukas. A community-based waste management campaign promoting proper segregation and timely collection.</p>
+      </div>
+      <div>
+        <strong>Navigation</strong><br>
+        <a href=""index.html"">Home</a><br>
+        <a href=""schedule.html"">Waste Schedule</a><br>
+        <a href=""schedule.html#guide"">Waste Guide</a><br>
+        <a href=""report.html"">Report a Concern</a><br>
+        <a href=""about.html"">About</a>
+      </div>
+      <div>
+        <strong>Community</strong><br>
+        <p style=""margin: 0;"">
+          <svg width=""16"" height=""16"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""margin-right: 0.4rem;"">
+            <path d=""M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z""></path>
+            <circle cx=""12"" cy=""10"" r=""3""></circle>
+          </svg>
+          <span data-community=""barangay""></span>, <span data-community=""city""></span><br>
+          <svg width=""16"" height=""16"" viewBox=""0 0 24 24"" fill=""none"" stroke=""currentColor"" stroke-width=""2"" stroke-linecap=""round"" stroke-linejoin=""round"" style=""margin-right: 0.4rem; margin-top: 0.5rem;"">
+            <path d=""M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z""></path>
+          </svg>
+          <span data-community=""contact""></span>
+        </p>
+      </div>
     </div>
   </footer>
-  <script src="js/config.js"></script>
-  <script src="js/schedule-core.js"></script>
-  <script src="js/main.js"></script>
+
+  <script src=""js/config.js""></script>
+  <script src=""js/schedule-core.js""></script>
+  <script src=""js/main.js""></script>
 </body>
 </html>
-EOF
-Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\index.html"
