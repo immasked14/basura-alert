@@ -57,5 +57,3 @@
     else preview.textContent = S.collectionTypes(sched).map((t) => t + ": " + sched[t].days.join(", ") + " " + sched[t].time).join(" | ") + (S.isDemo() ? " (DEMO ONLY)" : "");
   }
 })();
-EOF
-Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\js\main.js"

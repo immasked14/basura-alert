@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const cfg = window.BASURA_CONFIG;
   const S = window.BasuraSchedule;
   let weekOffset = 0;
@@ -95,7 +95,7 @@
     if (!matches.length) { const li = document.createElement("li"); li.textContent = "No matching items found."; list.appendChild(li); return; }
     matches.forEach((g) => {
       const li = document.createElement("li");
-      const strong = document.createElement("strong"); strong.textContent = g.name + " — " + g.cat; li.appendChild(strong);
+      const strong = document.createElement("strong"); strong.textContent = g.name + " â€” " + g.cat; li.appendChild(strong);
       const p = document.createElement("p"); p.textContent = g.info + ". " + g.advice + (g.caution ? " Caution: " + g.caution : ""); li.appendChild(p);
       list.appendChild(li);
     });
@@ -105,5 +105,3 @@
   if (clearBtn) clearBtn.addEventListener("click", () => { if (search) search.value = ""; if (filter) filter.value = "all"; render(); });
   render();
 })();
-EOF
-Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\js\schedule.js"

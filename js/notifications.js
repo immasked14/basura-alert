@@ -63,5 +63,3 @@
   }
   setInterval(checkReminder, 30000);
 })();
-EOF
-Write-File -Path "C:\Users\CL2-Client\Desktop\basura-alert\js\notifications.js"
